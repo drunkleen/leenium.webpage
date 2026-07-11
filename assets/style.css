@@ -143,6 +143,7 @@ img {
   width: min(var(--page-width), calc(100% - 32px));
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
@@ -176,7 +177,54 @@ img {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 10px;
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 48, 51, 0.95);
+  background: rgba(17, 25, 28, 0.88);
+  color: var(--fg);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-toggle-bars {
+  width: 18px;
+  display: grid;
+  gap: 3px;
+}
+
+.nav-toggle-bars span {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.topbar.is-nav-open .nav-toggle-bars span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.topbar.is-nav-open .nav-toggle-bars span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar.is-nav-open .nav-toggle-bars span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
 }
 
 .nav a {
@@ -630,8 +678,45 @@ td {
   }
 
   .topbar-inner {
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    order: 3;
+    justify-content: flex-start;
+    padding-top: 2px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition:
+      max-height 260ms ease,
+      opacity 220ms ease,
+      transform 220ms ease,
+      padding-top 220ms ease;
+  }
+
+  .topbar.is-nav-open .nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    max-height: 360px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding-top: 10px;
+  }
+
+  .topbar.is-nav-open .nav a {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .swatch-grid {
@@ -643,6 +728,28 @@ td {
   .page,
   .topbar-inner {
     width: min(var(--page-width), calc(100% - 24px));
+  }
+
+  .topbar-inner {
+    padding: 12px 0 14px;
+  }
+
+  .nav-toggle {
+    min-height: 40px;
+    padding: 0 12px;
+  }
+
+  .nav-toggle-label {
+    font-size: 0.94rem;
+  }
+
+  .topbar.is-nav-open .nav {
+    gap: 8px;
+    padding-top: 8px;
+  }
+
+  .topbar.is-nav-open .nav a {
+    padding: 10px 12px;
   }
 
   .hero,
