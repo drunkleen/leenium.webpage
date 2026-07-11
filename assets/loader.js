@@ -5,34 +5,58 @@
 
   if (topbar && topbarInner && nav) {
     const button = document.createElement('button');
+    const backdrop = document.createElement('div');
+    const label = document.createElement('span');
     button.type = 'button';
     button.className = 'nav-toggle';
     button.setAttribute('aria-expanded', 'false');
     button.setAttribute('aria-controls', 'primary-navigation');
+    button.setAttribute('aria-label', 'Open navigation menu');
     button.innerHTML = `
       <span class="nav-toggle-bars" aria-hidden="true">
         <span></span>
         <span></span>
         <span></span>
       </span>
-      <span class="nav-toggle-label">Menu</span>
     `;
+    label.className = 'nav-toggle-label';
+    label.textContent = 'Menu';
+    button.appendChild(label);
 
     if (!nav.id) {
       nav.id = 'primary-navigation';
     }
 
+    backdrop.className = 'nav-backdrop';
+
     topbarInner.insertBefore(button, nav);
+    topbar.after(backdrop);
 
     const closeNav = () => {
       topbar.classList.remove('is-nav-open');
+      backdrop.classList.remove('is-visible');
+      document.body.classList.remove('has-nav-open');
       button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'Open navigation menu');
+      nav.setAttribute('aria-hidden', 'true');
+      label.textContent = 'Menu';
+      button.focus();
     };
 
     const openNav = () => {
       topbar.classList.add('is-nav-open');
+      backdrop.classList.add('is-visible');
+      document.body.classList.add('has-nav-open');
       button.setAttribute('aria-expanded', 'true');
+      button.setAttribute('aria-label', 'Close navigation menu');
+      nav.setAttribute('aria-hidden', 'false');
+      label.textContent = 'Close';
+      window.requestAnimationFrame(() => {
+        nav.querySelector('a')?.focus();
+      });
     };
+
+    nav.setAttribute('aria-hidden', 'true');
 
     button.addEventListener('click', () => {
       if (topbar.classList.contains('is-nav-open')) {
@@ -48,7 +72,32 @@
       }
     });
 
+    backdrop.addEventListener('click', closeNav);
+
     window.addEventListener('keydown', (event) => {
+      if (event.key === 'Tab' && topbar.classList.contains('is-nav-open')) {
+        const focusables = [button, ...Array.from(nav.querySelectorAll('a'))];
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+          return;
+        }
+
+        if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+          return;
+        }
+
+        if (!focusables.includes(document.activeElement)) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+
       if (event.key === 'Escape') {
         closeNav();
       }
