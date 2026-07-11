@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Leenium Neovim colorscheme and highlights." />
+  <title>Leenium Neovim</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script defer src="../assets/loader.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../"><img class="brand-logo" src="../assets/navbar-logo.png" alt="" aria-hidden="true" /><span>Leenium</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../palette.html">Palette</a>
+        <a href="vscode.html">VS Code</a>
+        <a href="nvim.html" aria-current="page">Neovim</a>
+        <a href="firefox.html">Firefox</a>
+        <a href="opencode.html">OpenCode</a>
+        <a href="omarchy.html">Omarchy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page product-shell">
+    <section class="product-hero">
+      <span class="eyebrow">Colorscheme</span>
+      <div class="product-grid">
+        <div>
+          <div class="product-heading">
+            <span class="product-mark product-mark-large" aria-hidden="true"><img src="../assets/logos/nvim.svg" alt="" /></span>
+            <div><h1>Leenium Neovim</h1></div>
+          </div>
+          <p class="lede">A Neovim theme aligned to the same exact Leenium hex values used in VS Code, with highlight groups, Treesitter, LSP, and UI mappings tuned for a dark, low-glare workspace.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/drunkleen/leenium.nvim" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="button-secondary" href="../palette.html">Palette</a>
+          </div>
+          <div class="tag-row" style="margin-top: 18px;">
+            <span class="tag">Lua</span>
+            <span class="tag">Treesitter</span>
+            <span class="tag">LSP</span>
+          </div>
+        </div>
+        <aside class="preview-card">
+          <img src="https://raw.githubusercontent.com/drunkleen/leenium.nvim/refs/heads/master/assets/preview.png" alt="Leenium Neovim preview" loading="lazy" />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Highlights</h2></div></div>
+      <div class="product-grid-cards grid-3">
+        <article class="detail-card"><h3>Exact palette match</h3><p>Mirrors the same core hex values as the VS Code theme wherever Neovim allows.</p></article>
+        <article class="detail-card"><h3>Full UI mapping</h3><p>Includes file tree, statusline, floating windows, diagnostics, and semantic tokens.</p></article>
+        <article class="detail-card"><h3>Minimal friction</h3><p>Install as a regular colorscheme and load it with `colorscheme leenium`.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Use</h2></div></div>
+      <div class="detail-card">
+        <p>Add the plugin and activate the theme:</p>
+        <div class="code">vim.cmd.colorscheme("leenium")</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page footer-inner"><span>Leenium Neovim</span><span class="link-row"><a class="button-secondary button-mini" href="../palette.html">Palette</a><a class="button-secondary button-mini" href="https://github.com/drunkleen/leenium.nvim" target="_blank" rel="noreferrer">Repo</a></span></div></footer>
+</body>
+</html>
