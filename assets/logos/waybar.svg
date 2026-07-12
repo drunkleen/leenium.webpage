@@ -1,0 +1,18 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <rect stroke-width="0" opacity="0.6" rx="20" id="svg_1" height="100" width="560" y="20" x="20" stroke="#000" fill="#59d6c5"/>
+  <rect stroke-width="0" opacity="0.5" rx="20" id="svg_2" height="160" width="380" y="139" x="20" stroke="#000" fill="#365156"/>
+  <rect stroke-width="0" opacity="0.5" rx="20" id="svg_4" height="160" width="160.00001" y="140" x="420" stroke="#000" fill="#e16f73"/>
+  <rect stroke-width="0" opacity="0.5" rx="20" id="svg_5" height="113" width="560" y="320" x="20" stroke="#000" fill="#718688"/>
+  <rect stroke-width="0" opacity="0.5" rx="30" id="svg_6" height="120" width="200" y="450" x="20" stroke="#000" fill="#33b8a8"/>
+  <rect stroke-width="0" opacity="0.5" rx="20" id="svg_7" height="120" width="340" y="450" x="240" stroke="#000" fill="#365156"/>
+  <rect rx="8" id="svg_8" height="30" width="30" y="55" x="40" stroke="#000" fill="#304144"/>
+  <rect rx="8" id="svg_10" height="30" width="30" y="55" x="85" stroke="#000" fill="#304144"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="'Azeret Mono'" font-size="30" stroke-width="0" id="svg_11" y="80" x="250" stroke="#000" fill="#304144">--:--</text>
+  <rect rx="8" id="svg_12" height="30" width="30" y="55" x="530" stroke="#000" fill="#304144"/>
+  <rect rx="8" id="svg_13" height="30" width="30" y="55" x="490" stroke="#000" fill="#304144"/>
+  <rect rx="8" id="svg_14" height="30" width="30" y="55" x="450" stroke="#000" fill="#304144"/>
+  <rect rx="8" id="svg_15" height="30" width="30" y="55" x="410" stroke="#000" fill="#304144"/>
+ </g>
+</svg>

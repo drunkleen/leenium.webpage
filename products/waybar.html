@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Leenium Waybar theme." />
+  <title>Leenium Waybar</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script defer src="../assets/loader.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../"><img class="brand-logo" src="../assets/navbar-logo.png" alt="" aria-hidden="true" /><span>Leenium</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../palette.html">Palette</a>
+        <a href="vscode.html">VS Code</a>
+        <a href="nvim.html">Neovim</a>
+        <a href="firefox.html">Firefox</a>
+        <a href="opencode.html">OpenCode</a>
+        <a href="omarchy.html">Omarchy</a>
+        <a href="waybar.html" aria-current="page">Waybar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page product-shell">
+    <section class="product-hero">
+      <div class="waybar-preview-shell">
+        <img src="../assets/previews/waybar-preview.png" alt="Leenium Waybar preview" loading="lazy" />
+      </div>
+      <span class="eyebrow">Status bar theme</span>
+      <div class="product-grid">
+        <div>
+          <div class="product-heading">
+            <span class="product-mark product-mark-large" aria-hidden="true"><img src="../assets/logos/waybar.svg" alt="" /></span>
+            <div><h1>Leenium Waybar</h1></div>
+          </div>
+          <p class="lede">A Waybar theme that brings the shared Leenium palette into a floating, Omarchy-like bar layout.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/drunkleen/leenium.waybar" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="button-secondary" href="../palette.html">Palette</a>
+          </div>
+          <div class="tag-row" style="margin-top: 18px;">
+            <span class="tag">Wayland</span>
+            <span class="tag">Bar</span>
+            <span class="tag">Desktop</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Install</h2></div></div>
+      <div class="detail-card">
+        <p>Clone the theme into your Waybar config directory and restart Waybar:</p>
+        <div class="code">mv ~/.config/waybar ~/.config/waybar.backup &&
+git clone https://github.com/drunkleen/leenium.waybar.git ~/.config/waybar && pkill waybar && waybar &</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Highlights</h2></div></div>
+      <div class="product-grid-cards grid-3">
+        <article class="detail-card"><h3>Floating modules</h3><p>Pills, borders, and spacing are tuned to feel closer to the rest of the desktop stack.</p></article>
+        <article class="detail-card"><h3>Shared palette</h3><p>Uses the same background, accent, and text colors as the rest of Leenium.</p></article>
+        <article class="detail-card"><h3>Config pair</h3><p>Designed to work with Waybar CSS and JSONC configuration together.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page footer-inner"><span>Leenium Waybar</span><span class="link-row"><a class="button-secondary button-mini" href="../palette.html">Palette</a><a class="button-secondary button-mini" href="https://github.com/drunkleen/leenium.waybar" target="_blank" rel="noreferrer">Repo</a></span></div></footer>
+</body>
+</html>

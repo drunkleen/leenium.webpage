@@ -21,6 +21,7 @@ Hosted under `github.com/drunkleen/leenium.webpage`.
 - Firefox
 - OpenCode
 - Omarchy
+- Waybar
 
 ---
 
