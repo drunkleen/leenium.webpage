@@ -23,6 +23,7 @@ Hosted under `github.com/drunkleen/leenium.webpage`.
 - Omarchy
 - Waybar
 - Limine
+- Hyprlock
 
 ---
 
