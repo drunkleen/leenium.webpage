@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Leenium Limine bootloader theme." />
+  <title>Leenium Limine</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script defer src="../assets/loader.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../"><img class="brand-logo" src="../assets/navbar-logo.png" alt="" aria-hidden="true" /><span>Leenium</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../palette.html">Palette</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page product-shell">
+    <section class="product-hero">
+      <span class="eyebrow">Bootloader theme</span>
+      <div class="product-grid">
+        <div>
+          <div class="product-heading">
+            <span class="product-mark product-mark-large" aria-hidden="true"><img src="../assets/logos/limine.svg" alt="" /></span>
+            <div><h1>Leenium Limine</h1></div>
+          </div>
+          <p class="lede">A Limine bootloader theme that carries the shared Leenium palette into the startup menu, branding string, and terminal colors.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/drunkleen/leenium.limine" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="button-secondary" href="../palette.html">Palette</a>
+          </div>
+          <div class="tag-row" style="margin-top: 18px;">
+            <span class="tag">Bootloader</span>
+            <span class="tag">System</span>
+            <span class="tag">Theme</span>
+          </div>
+        </div>
+        <aside class="preview-card">
+          <img src="../assets/previews/limine-preview.png" alt="Leenium Limine preview" loading="lazy" />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Install</h2></div></div>
+      <div class="detail-card">
+        <p>Clone and run the installer as root:</p>
+        <div class="code">git clone https://github.com/drunkleen/leenium.limine.git && cd leenium.limine && sudo ./install.sh</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><h2>Highlights</h2></div></div>
+      <div class="product-grid-cards grid-3">
+        <article class="detail-card"><h3>Boot branding</h3><p>Uses the shared accent and help colors for the Limine interface text and branding line.</p></article>
+        <article class="detail-card"><h3>Terminal palette</h3><p>Maps the exact Leenium neutral and accent colors into Limine's graphical terminal.</p></article>
+        <article class="detail-card"><h3>Simple install</h3><p>Copies a ready-made `limine.conf` and updates the existing UKI name entry.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page footer-inner"><span>Leenium Limine</span><span class="link-row"><a class="button-secondary button-mini" href="../palette.html">Palette</a><a class="button-secondary button-mini" href="https://github.com/drunkleen/leenium.limine" target="_blank" rel="noreferrer">Repo</a></span></div></footer>
+</body>
+</html>
