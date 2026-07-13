@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/drunkleen/leenium.webpage/refs/heads/master/assets/LEENIUM.png" width="120" alt="Leenium logo" />
+<img src="https://raw.githubusercontent.com/drunkleen/leenium.webpage/refs/heads/master/assets/LEENIUM.png" width="250" alt="Leenium logo" />
 
 **A static dark website for the shared Leenium palette and product ecosystem.**
 
@@ -53,7 +53,7 @@ Then open the local address shown in the terminal.
 - Product pages link back to the matching Leenium repos and previews.
 - The site is intentionally minimal and hand-authored.
 
----
+<img src="https://raw.githubusercontent.com/drunkleen/leenium.webpage/refs/heads/master/assets/footer.png" width="100%" alt="Leenium footer" />
 
 ## License
 
