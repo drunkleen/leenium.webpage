@@ -20,6 +20,7 @@ Hosted under `github.com/drunkleen/leenium.webpage`.
 - Neovim
 - Firefox
 - OpenCode
+- Ghidra
 - Omarchy
 - Waybar
 - Limine
