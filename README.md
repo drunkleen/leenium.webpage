@@ -1,8 +1,6 @@
 <div align="center">
 
-# Leenium Webpage
-
-<img src="./assets/navbar-logo.png" width="120" alt="Leenium logo" />
+<img src="https://raw.githubusercontent.com/drunkleen/leenium.webpage/refs/heads/master/assets/LEENIUM.png" width="120" alt="Leenium logo" />
 
 **A static dark website for the shared Leenium palette and product ecosystem.**
 
