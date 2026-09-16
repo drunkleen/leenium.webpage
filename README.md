@@ -32,6 +32,7 @@ Hosted under `github.com/drunkleen/leenium.webpage`.
 - Waybar
 - Limine
 - Hyprlock
+- Plymouth
 
 ---
 
