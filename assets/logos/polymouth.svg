@@ -2,19 +2,23 @@
 <svg version="1.1"
      xmlns="http://www.w3.org/2000/svg"
      width="200"
-     height="200">
+     height="200"
+     viewBox="0 0 200 200">
     <g fill="#33b8a8">
-        <!-- Primary arc (top-right) -->
-        <rect x="130.5" y="49.9" width="50" height="15" rx="7.5" opacity="0.70" />
-        <rect x="143.3" y="77.4" width="50" height="15" rx="7.5" opacity="1.0" />
-        <rect x="143.3" y="107.7" width="50" height="15" rx="7.5" opacity="1.0" />
-        <rect x="130.5" y="135.1" width="50" height="15" rx="7.5" opacity="0.70" />
-        <!-- Secondary arc (bottom-left) -->
-        <rect x="30.0" y="146.1" width="50" height="15" rx="7.5" opacity="0.70" />
-        <rect x="14.4" y="127.5" width="50" height="15" rx="7.5" opacity="1.0" />
-        <rect x="6.1" y="104.7" width="50" height="15" rx="7.5" opacity="0.70" />
-        <!-- Faint trail (bottom-right) -->
-        <rect x="119.0" y="146.9" width="50" height="15" rx="7.5" opacity="0.33" />
-        <rect x="100.1" y="157.9" width="50" height="15" rx="7.5" opacity="0.33" />
+        <!-- Nose cone -->
+        <path d="M118 24 C112 36 105 48 102 58 L134 58 C131 48 124 36 118 24 Z" />
+        <!-- Body tube -->
+        <path d="M102 58 L99 118 Q98 128 107 128 L129 128 Q138 128 137 118 L134 58 Z" />
+        <!-- Fins -->
+        <path d="M100 92 L78 126 L96 124 Z" />
+        <path d="M136 92 L158 126 L140 124 Z" />
+        <!-- Outer flame -->
+        <path fill-opacity="0.50" d="M98 128 L138 128 Q184 150 172 186 Q156 206 120 202 Q84 206 68 186 Q56 150 98 128 Z" />
+        <!-- Inner flame -->
+        <path d="M106 130 Q100 162 120 194 Q140 162 130 130 Z" />
+        <!-- Sparkles -->
+        <path d="M170 38 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4 l8 -4 Z" />
+        <path d="M184 64 l3 6 l6 3 l-6 3 l-3 6 l-3 -6 l-6 -3 l6 -3 Z" />
+        <circle cx="156" cy="18" r="2.5" />
     </g>
 </svg>
